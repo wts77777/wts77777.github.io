@@ -1,0 +1,1101 @@
+/*BASE*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+p,
+span {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font: 18px/1.286 'Roboto', Arial, Verdana, sans-serif;
+    color: #222;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 300;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 155px 0 30px;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+section {
+    padding: 85px 0 90px;
+}
+
+.link {
+    display: block;
+    padding: 19px 0 15px;
+    width: 325px;
+    margin: 0 auto;
+    color: #fff;
+    background: #8e24aa;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 27px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*HEADER STYLES*/
+
+header {
+    font-size: calc(1em - 4px);
+}
+
+#logo {
+    width: 111px;
+    height: auto;
+}
+
+#logo a,
+#logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 15px 16px;
+}
+
+.header .contacts {
+    text-align: right;
+}
+
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.footer .contacts {
+    flex: 80%;
+    margin-left: 35px;
+    justify-content: space-evenly;
+}
+
+.footer .contacts > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.contacts > div > div {
+    margin-left: 55px;
+    color: #969696;
+}
+
+.contacts-title {
+    color: #222;
+}
+
+.contacts .phone-number .contacts-title {
+    font-size: calc(1em + 6px);
+}
+
+.email a[href^='mailto'] {
+    font-size: calc(1em + 2px);
+}
+
+.contacts .phone-number > a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.mobile-menu {
+    display: none;
+    width: 36px;
+    height: 30px;
+    cursor: pointer;
+    background: url("../images/menu.png");
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 8px;
+    margin: 0 auto;
+}
+
+.navigation {
+    background: #ffea3c;
+    font-size: calc(1em + 2px);
+    font-weight: 700;
+}
+
+.navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navigation a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 25px 0 23px;
+}
+
+/*БЛОК "РЕМОНТ БЕЗ ГОЛОВНОЙ БОЛИ"*/
+
+.remont-info .remont-info-content p,
+.remont-info .remont-info-content ul,
+.remont-info .remont-info-content a {
+    display: block;
+    font-size: calc(1em - 2px);
+    line-height: 1.75;
+}
+
+.remont-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.remont-info .info-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.remont-info .img {
+    max-width: 278px;
+    margin: 20px;
+}
+
+.remont-info .img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.remont-info .remont-info-content {
+    max-width: 653px;
+}
+
+.remont-info .remont-info-content ul {
+    margin: 2px 0;
+}
+
+.remont-info .remont-info-content li:before {
+    display: inline-block;
+    content: '-';
+    margin: 0 5px 0 0;
+}
+
+.remont-info .remont-info-content a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.remont-info .remont-info-content > a:last-child {
+    margin-top: 85px;
+}
+/*БЛОК 3 ШАГА ДО НОВОСЕЛЬЯ*/
+
+.three-steps {
+    border-top: 1px solid #ededed;
+    padding: 85px 0 90px;
+    width: 100%;
+}
+
+.three-steps h2 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.three-steps > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.three-steps > div > div {
+    max-width: 263px;
+    position: relative;
+    margin: 0 5%
+}
+
+.three-steps > div > div img {
+    width: 100%;
+    height: auto;
+}
+
+.three-steps > div > div p {
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    padding: 0 50px 0 0;
+}
+/*БЛОК ГОТОВЫЕ ДИЗАЙН-ПРОЕКТЫ РЕМОНТА*/
+
+.design-projects {
+    background: #ffea3c;
+    padding: 85px 0 90px;
+}
+.design-projects .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.design-projects .container > h2,
+.design-projects .container > p {
+    text-align: center;
+    margin: 0;
+}
+
+.design-projects .container > h2 {
+    font-weight: 300;
+}
+
+.desings {
+    margin: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.desings .big-desing-block,
+.design .small-design-block {
+    display: block;
+}
+
+.desings .big-desing-block {
+    max-width: 765px;
+    height: 560px;
+}
+
+.desings .designs-block-container {
+    max-width: 375px;
+    height: 560px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.desings .small-design-block {
+    width: 100%;
+    height: 280px;
+}
+
+.desings .small-design-block img,
+.desings .big-desing-block img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.desings .small-design-block,
+.desings .big-desing-block {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.desings .big-desing-block .design-project-frame,
+.desings .small-design-block .design-project-frame {
+    position: absolute;
+    border: 5px solid rgba(255, 234, 60, 0.5);
+    color: #fff;
+}
+
+.desings .big-desing-block .design-project-frame {
+    top: 19.4286%;
+    left: 37.1242%;
+    bottom: 32.125%;
+    right: 20.5229%;
+}
+
+.desings .small-design-block .design-project-frame {
+    top: 15.71%;
+    left: 28.8%;
+    bottom: 16.43%;
+    right: 14.93%;
+}
+
+.desings .big-desing-block:hover .design-project-frame,
+.desings .small-design-block:hover .design-project-frame {
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    color: #ffea3c;
+}
+
+.design-project-frame > div {
+    position: relative;
+    height: 100%;
+}
+
+.design-project-frame > div > div {
+    position: absolute;
+    top: 30%;
+    left: -18.52%;
+    width: 118.52%;
+}
+
+.desings .big-desing-block h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+/*ОТЛИЧИЯ ОТ ШАБАШНИКОВ*/
+
+.advances {
+    padding-bottom: 0;
+}
+
+.advances .container > h2,
+.advances .container > p {
+    text-align: center;
+}
+
+.advances .advances-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 50px 0;
+}
+
+.advances .advances-list > div,
+.advances .advances-list > ul {
+    max-width: 49%;
+}
+
+.advances .advances-list > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.advances .advances-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.advances .advances-list li {
+    max-width: 47.5%;
+    margin-bottom: 45px;
+}
+
+.advances .advances-list h5 {
+    margin: 5px 0;
+}
+
+.advances .advances-list p {
+    color: #969696;
+}
+
+/*БЛОК ПРО МАСТЕРА ПЕТРЫКИНА*/
+
+.master-petrikin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background: url("../images/circle.png") no-repeat 31% -15%;
+    background-size: 88% 170%;
+    padding: 90px 0 0;
+}
+
+.master-petrikin .img {
+    width: 33%;
+    padding: 0 30px 0 0;
+}
+
+.master-petrikin .img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.master-info {
+    width: 60%;
+}
+
+.master-strongs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0 0 10px 0;
+}
+
+.master-strongs li:nth-child(2n) {
+    margin: 0 8px;
+}
+
+.strong-sides {
+    margin: 10px 0 30px;
+}
+
+.strong-sides li {
+    line-height: 26px;
+    margin: 0 0 20px 0;
+}
+
+.strong-sides li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
+    background: url('../images/list-item.png') no-repeat;
+}
+
+.master-info .link {
+    margin: 0 0 90px 0;
+    width: 312px;
+}
+
+
+/*СТИЛИ ФУТТЕРА*/
+
+footer {
+    font-size: calc(1em - 4px);
+    border-top: 1px solid #eee;
+    padding: 35px 0;
+}
+
+.logo {
+    width: 111px;
+    height: auto;
+}
+
+.logo a,
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.about-us {
+    font-size: calc(1em + 2px);
+}
+
+.about-us li {
+    margin-bottom: 10px;
+}
+
+.about-us li:last-child {
+    margin-bottom: 0;
+}
+.designed-by {
+    text-align: right;
+    padding: 0 10px 10px 0;
+}
+.designed-by a {
+    color: #000;
+    text-shadow: 1px 1px 1px #777;
+}
+.designed-by a .yellow {
+    color: #F7DF1D;
+    text-shadow: 1px 1px 1px #777;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    .parallax {
+        height: 500px;
+    }
+    .remont-info {
+        padding-bottom: 20px;
+    }
+    .remont-info .remont-info-content > a:last-child {
+        margin-top: 35px;
+    }
+    .remont-info .img {
+        max-width: 278px;
+        margin: 5%;
+    }
+    .three-steps {
+        padding: 45px 0 60px;
+    }
+    .three-steps h2 {
+        margin-bottom: 35px;
+    }
+    .three-steps > div > div {
+        margin: 0 3%
+    }
+    .three-steps > div > div p {
+        padding: 0 15px 0 0;
+        top: 25%;
+    }
+    .desings .big-desing-block,
+    .desings .designs-block-container {
+        height: 480px;
+    }
+    .desings .small-design-block {
+        height: 240px;
+    }
+    .desings .big-desing-block h3 {
+        font-size: 2.1em;
+    }
+    .footer .contacts .about-us {
+        flex: 65%;
+    }
+    .footer .contacts > div {
+        flex: 35%;
+        flex-direction: column;
+    }
+    .footer .contacts > div > div {
+        padding-bottom: 10px;
+        text-align: left;
+    }
+    .about-us li {
+        margin-left: 49%;
+    }
+    .master-petrikin {
+        background: url(../images/circle.png) no-repeat 31% 0%;
+        background-size: 75% 170%;
+        padding: 0px 0 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    body {
+        font-size: 14px;
+    }
+    section {
+        padding: 35px 0;
+    }
+    .container {
+        padding: 20px 10px 0px;
+    }
+
+    .header {
+        padding: 10px 5px 7px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .contacts {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: top;
+        -ms-flex-align: top;
+        align-items: top;
+        width: 100%;
+    }
+    .contacts > div > div {
+        width: auto;
+        margin-left: 5px;
+        flex: 33%;
+        text-align: center;
+    }
+    #logo {
+        margin-bottom: 15px;
+    }
+    .header .contacts > div > div:last-child {
+        width: auto;
+    }
+    .navigation {
+        position: relative;
+        height: 45px;
+    }
+    .navigation ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 10;
+        width: 100%;
+        background: #ffea3c;
+    }
+    .navigation li {
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+    .navigation li:last-child {
+        border: none;
+    }
+    .navigation .container {
+        padding: 0;
+    }
+    .navigation a {
+        padding: 25px 0 23px;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .navigation.active ul {
+        display: block;
+    }
+    h1 {
+        padding-top: 65px;
+        font-size: 3em;
+    }
+    .parallax {
+        height: 450px;
+    }
+    .remont-info {
+        position: relative;
+        margin: 0 0 12px 0;
+        padding-bottom: 15px;
+    }
+    .remont-info .img {
+        max-width: 148px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .remont-info .img img {
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+    .remont-info .remont-info-content {
+        max-width: 80%;
+        padding-right: 15px;
+        position: relative;
+        z-index: 1;
+    }
+    .remont-info p,
+    .remont-info ul,
+    .remont-info a {
+        text-shadow: 1px 1px 4px #fff, 0 0 0.5em #fff;
+    }
+    .remont-info .remont-info-content > a:last-child {
+        margin-top: 25px;
+    }
+    .three-steps {
+        padding: 15px 10px 5px;
+        margin-top: 15px;
+    }
+    .three-steps h2 {
+        margin-bottom: 25px;
+    }
+    .three-steps > div > div {
+        margin: 0 1%
+    }
+    .three-steps > div > div p {
+        padding: 0 10px 0 0;
+        top: 20%;
+    }
+    .design-projects {
+        padding: 0 0 20px;
+    }
+    .desings {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 35px 0;
+    }
+    .desings .big-desing-block {
+        width: 100%;
+        height: 400px;
+    }
+    .desings .designs-block-container {
+        max-width: 670px;
+        height: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .desings .small-design-block {
+        max-width: 335px;
+        height: 200px;
+    }
+    .advances {
+        padding-top: 5px;
+    }
+    .advances-list {
+        position: relative;
+        margin-top: 35px;
+    }
+    .advances .advances-list {
+        margin-bottom: 0;
+    }
+    .advances .advances-list ul {
+        max-width: 75%;
+    }
+    .advances .advances-list li {
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    .advances .advances-list p {
+        color: #555;
+    }
+    .ruler:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(255,255,255,0.35);
+    }
+
+    .ruler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .master-petrikin {
+        padding-top: 45px;
+        background-size: 88% 140%;
+    }
+    .master-info {
+        width: 66%;
+    }
+    .strong-sides,
+    .master-info .link {
+        margin-bottom: 15px;
+    }
+    footer {
+        padding: 25px 0;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer .logo {
+        display: block;
+        width: 100%;
+    }
+    .footer .logo a {
+        display: block;
+        width: 160px;
+        margin: 0 auto;
+    }
+    .footer .logo a img {
+        width: 100%;
+        height: auto;
+    }
+    .about-us li {
+        margin-left: 0%;
+    }
+    .footer .contacts {
+        margin-left: 20px;
+    }
+    .footer .contacts .about-us {
+        flex: 70%;
+    }
+    .designed-by {
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        padding-top: 15px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .link {
+        width: 225px;
+    }
+    #logo {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 2.5em;
+        padding: 80px 0 20px;
+    }
+    .parallax {
+        height: 350px;
+    }
+    .remont-info {
+        margin: 0 0 9px 0;
+    }
+    .design-projects,
+    .remont-info,
+    .advances{
+        padding-top: 15px;
+    }
+    .remont-info .img {
+        max-width: 128px;
+    }
+    .remont-info p,
+    .remont-info ul,
+    .remont-info a {
+        font-size: 1em;
+    }
+    .remont-info .remont-info-content > a:last-child {
+        margin-top: 15px;
+    }
+    .three-steps {
+        padding: 15px 0 30px;
+    }
+    .three-steps h2 {
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    .three-steps > div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .three-steps > div > div {
+        margin: 3% 30px;
+    }
+    .three-steps > div > div p {
+        font-size: 1.75em;
+        font-weight: 400;
+        padding: 0 10px 0 0;
+        top: 20%;
+    }
+    .desings {
+        margin-bottom: 25px;
+    }
+    .desings .big-desing-block {
+        height: 280px;
+    }
+    .desings .small-design-block {
+        height: 140px;
+    }
+    .design-project-frame > div > div {
+        top: 25%;
+    }
+    .advances .advances-list {
+        margin-top: 25px;
+    }
+    .advances .advances-list ul {
+        max-width: 100%;
+    }
+    .master-petrikin {
+        background-size: 88% 117%;
+        background-position: 0% -69%;
+    }
+    .master-info {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .master-info .link {
+        width: 235px;
+    }
+    .master-petrikin .img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .strong-sides li {
+        margin-bottom: 10px;
+    }
+    .contacts {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 11px;
+    }
+    .container {
+        padding: 0 3px;
+    }
+    .remont-info {
+        margin: 0 0 6px 0;
+    }
+    .remont-info .img {
+        max-width: 78px;
+    }
+    .remont-info .remont-info-content > a:last-child {
+        margin-top: 10px;
+    }
+    .three-steps {
+        padding: 10px 0 20px;
+    }
+    .three-steps h2 {
+        margin-bottom: 5px;
+    }
+    .three-steps > div > div {
+        margin: 2% 10px;
+    }
+    .three-steps > div > div {
+        max-width: 200px;
+    }
+    .desings .big-desing-block {
+        height: 200px;
+    }
+    .desings .small-design-block {
+        height: 100px;
+    }
+    .design-project-frame > div > div {
+        font-size: 9px;
+        top: 20%;
+        left: -40%;
+        width: 140%;
+    }
+    .footer .contacts .about-us {
+        flex: 50%;
+    }
+    .footer .contacts > div {
+        flex: 50%;
+    }
+    .footer .logo a {
+        width: 130px;
+    }
+}
+
+
+
